@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAy8vLAI+PjwBTU1MAFxcXAKampgBqamoALi4uAPn5+QC9vb0AgYGBAEVFRQCYmJgAXFxcAK+vrwBzc3MANzc3ABISEgDd3d0AoaGhAAQEBACTk5MA5ubmAKqqqgBubm4AwcHBAIWFhQBJSUkAnJycACQkJADv7+8As7OzAHd3dwA7OzsAysrKAI6OjgBSUlIAFhYWAKWlpQAtLS0AgICAAERERADT09MAl5eXAFtbWwAfHx8Arq6uAHJycgA2NjYAiYmJAKCgoABkZGQA8/PzALe3twA/Pz8Azs7OAFZWVgBtbW0AMTExAMDAwACEhIQA19fXAJubmwBfX18AIyMjAHZ2dgDJyckAjY2NAFFRUQDg4OAApKSkAGhoaAC7u7sAf39/AENDQwCWlpYAra2tADU1NQDExMQAiIiIAExMTAAQEBAAn5+fALa2tgB6enoAPj4+AJGRkQBVVVUAGRkZAGxsbAC/v78Ag4ODAEdHRwCampoAXl5eACIiIgDt7e0AsbGxADk5OQCMjIwAUFBQAKOjowBnZ2cAKysrALq6ugB+fn4A0dHRAFlZWQAdHR0ArKysAHBwcAA0NDQAh4eHAEtLSwDa2toAYmJiACYmJgC1tbUAkJCQAFRUVAAYGBgA4+PjAC8vLwC+vr4AgoKCAEZGRgCZmZkAXV1dALCwsAB0dHQAx8fHAIuLiwBPT08A3t7eAKKiogBmZmYAlJSUAFhYWACrq6sAb29vADMzMwDCwsIAhoaGAEpKSgDZ2dkAnZ2dAGFhYQDw8PAAtLS0AHh4eAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYJQXGpVlhY0KfA0/MToeAGIsRw0ZahZnGCFBZnoPRgCUKWR3NEUXSWkna0oHJCgAMC0bVQhWflIuakM/OIyOAFc2A3RMcI5aZYENh2Q/FQBeKD+MP3YXSZMXA5FHV1IAaYpNVlQ8K0YJeUAJEV+AAFxxKR0KE4Y1BpRjgguVDAAwhARzKFqANztOCzJsewUAHI42UDNqYXggKkSPVTJWAD4NRjaEE24lgSIdiVF2SwCDE5I/WSYSQpErdY9bdjEAM3BYIVkXAZAXDDUQIxp9AE9PaDp+Wj1yF1JIYoiDIgCVFJEyOW0fU3UMj2WODlYALEZzPAKLGH8vXT4FEHdvAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAA=" rel="icon" type="image/x-icon" />
+</head>
+
+<body>
+
+    <div class="quote-container" id="quote-container">
+        <!-- Quote -->
+        <div class="quote-text">
+            <i class="fas fa-quote-left"></i>
+            <span id="quote">Mess with the best, 
+                die like the rest</span>
+        </div>
+
+        <!-- Author -->
+        <div class="quote-author">
+            <span id="author">TheGuardian</span>
+        </div>
+
+        <!-- Buttons -->
+        <div class="button-container">
+            <button class="twitter-button" id="twitter" title="Tweet This!">
+                <i class="fab fa-twitter"></i>
+            </button>
+            <button id="new-quote">New Quote</button>
+        </div>
+    </div>
+
+    <!-- JS Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
