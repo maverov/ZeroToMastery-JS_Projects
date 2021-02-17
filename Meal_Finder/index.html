@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAf8t/ALL+/wBmun8AWcv+AABlnACVqtQAAFiPAABxWQBLvvIAAJj9ANjy/wAAGXoAAIvwAAAMbQAAjMwAzP7/AAyl2AAZZroAWMv/AAAMfgAA23IAAKU7AMrU6QAZsuUAFl27ACacvwAADHYAGbL+AACLAAAAXAAAZcv/AAB+5AB/y/4ATLH/AAB7HQAmsuUAMpy/AAByzAAA8HIAACWUADKy5QA/qT8AGZjlAABx2AC/v9wAJqXyABmHsgC/5f4AC2HDAD2z4wCy5f8ADDN+AJnL/wAAP34ALFWqAD+L2AA/mD8Av9jyAL/L5QAAf8sADKX9AD++/wAZsvEAAJgAAACY2AAA5EwAf9B/AH9/pQAAGYcAAJxhAAB/zAAmv/4AAHK/AAAynAAmz2UADHY/AAAljwAWaccAf7LlAIzY/gAZpeUAv9y/AAB+2AAhWbIAAG4dAL/lvwAAZcwAPz9+AABcUAAAWL8AAEuyAACXJgByvv8AAONyAFmpvwA/P48AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOztPO087AAAAAAAAOk8mR0dHR0cPDzsAAAAAT0dBMjwyPDIyMg84OwAAAFc8RUUoRSgIKBIyK1otAAAMTVtFBwUVCE0bNDI8WwAnYEo2J0JCFV4IFA5YRDxbXEZVIwNDXQJdHRZZREREPFJcXF9dIiJdNV0QS0AqVltSJSIfCSkYJBg+LhpMHjlSCxMRRw9XJiYmR0dHUS8BVjMYUywNDQ0NDSxHR0dJLxcLPz09CgoKCg0NLCwmGRkGAARIPT09CgoNDQ0sLFRUBgAAUBw9PT09PSAsLDdUBhcAAAAwMCEsLDFOVAYGFwAAAAAAAAAAAAAAAAAAAAAAAPwPAADABwAAgAMAAIABAACAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAADAAAAA4AMAAP//AAA=" rel="icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Meal Finder - Hristiyan Maverov</title>
+</head>
+<body>
+
+    <!-- Main Container -->
+    <div class="container">
+        <h1>Meal Finder</h1>
+        <div class="flex">
+            <form class="flex" id="submit">
+                <input type="text" id="search" placeholder="Search for Meals or keywords">
+                <button class="search-btn" type="submit">
+                   <i class="fas fa-search"></i> Search</button>
+            </form>
+            <button class="random-btn" id="random">
+                <i class="fas fa-hamburger fa-2x" title="Get a Random Meal"></i>
+            </button>
+        </div>
+
+        <!-- "Your search results for 'keyword': " -->
+        <div id="result-heading" style="margin-top: 2rem;"></div>
+        <!-- List of all fetched meals -->
+        <div id="meals" class="meals" style="margin-top: 1.5rem;"></div>
+        <!-- Single meal component -->
+        <div id="single-meal" style="margin-top: 1rem;"></div>
+
+        <footer class="footer">
+            Copyright <span id="year"></span> &copy; Hristiyan Maverov 
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

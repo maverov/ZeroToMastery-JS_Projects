@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark App - Hristiyan Maverov</title>
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIy/AAXN/wAAUXAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIy/ABL7/wAT//8ADOX/AABRcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEYAAXN/wAT//8AE///ABP//wAM5f8AAHqnAAAvQAAAAAAAAAAAAAAAAAAAAAAAAHqnAAB6pwAAeqcAAAAAAACu7wAT//8AE///ABP//wAT//8AE///ABD0/wAI2P8AAC9AAAAAAAAAl88AALr/ABD0/wAQ9P8AEPT/AACu7wACwP8AE///ABP//wAT//8AE///ABP//wCM//8AC+P/AABMaAAAkccAEv3/ABP//wAT//8AE///ABP//wACwP8AAsD/ABP//wA2//8AE///ABP//wAAuv8AD/D/AAfU/wAAIzAAAJHHABL9/wB4//8AE///ABP//wAT//8AAsD/AACArwA+9v8BuP//AEr//wAT//8AALr/AABulwAAbpcAAAAAAABGYAAL4f8ACNj/AAfS/wBU//8AE///AALA/wAAAAAAAICvAEnW/wAI1v8ACNb/AABGYAQZADgLRAGXAAAAAAAAAAAAAEZgAABpjwA+0v8AtP//AED//wACwP8AAAAAAAAAAAAAKTgAACk4AAApOAAAAAAAAAAADEgBnwQWADAAAAAAAAAAAAxIAZ8AAGmPACfJ/wAEyf8AADpQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgvAGgILwBoAAAAAAAAAAAQYQHXAAAAAAAABggAAAYIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC0QBlwQZADgSbwH3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHKABYBygAWBJsAe8EGQA4Em8B9wcoAFgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBYAMAo9AYcLQQGPGJUB/xiVAf8TcwH/DlYBvxiTAf8YlQH/FX8B/wAAAAAAAAAAAAAAAAAAAAAAAAAAEGMBtxeLAf9Ly2b/JbxC/x2zAf8cqwH/DU8BrwUgAEgWgwH/HbMB/z3PRP8VfwH/AAAAAAAAAAAAAAAAAAAAABBlAY8WgwH/FHkB/xV7B/8UeQH/DU8BrwAAAAAAAAAAAQcAEBR5Af8UeQH/E3MB/xqhAf8AAAAA//8AAM//AACH/wAAgfEAAADAAAAAgAAAAIAAAADAAACG4AAA/uEAAP/vAAD/XwAA/18AAPAHAADAQwAAwOEAAA==" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Open Modal -->
+    <h1 id="show-modal">Add Bookmark</h1>
+
+    <!-- Bookmarks -->
+    <div class="container" id="bookmarks-container">
+        
+    </div>
+
+    <!-- Modal -->
+    <div class="modal-container" id="modal">
+        <div class="modal">
+            <i class="fas fa-times close-icon" id="close-modal"></i>
+
+            <div class="modal-header">
+                <h3>Add Bookmark</h3>
+            </div>
+
+            <div class="modal-content">
+                <form id="bookmark-form">
+                    <!-- Website Name -->
+                    <div class="form-group">
+                        <label for="website-name" class="form-label">Website Name</label>
+                        <input type="text" class="form-input" id="website-name" placeholder="e.g. PC Club">
+                    </div>
+                    <!-- Website URL -->
+                    <div class="form-group">
+                        <label for="website-url" class="form-label">Website URL</label>
+                        <input type="text" class="form-input" id="website-url" placeholder="e.g. pcclub.com">
+                    </div>
+                    <button type="submit">Save</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- END OF MODAL -->
+
+    <!-- Footer -->
+    <footer>
+        <p id="copy">
+            Maverov © <span id="year"></span>
+        </p>
+    </footer>
+    <!-- End of Footer -->
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>

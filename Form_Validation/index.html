@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validator</title>
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACNDYABgt/8AUqb/AEia/wBImv8ARpf/AEaX/wBGl/8ARpf/AEaX/wBDlP8AQ5T/AEOU/wAYNmAAAAAAACNDYABuyv8AkfX/E6f+/xOn/v8Rpf7/AJj9/wCE5f8AfNv/AHzb/wB82/8AZL3/AGC5/wBguf8AUqf/ABg2YABgt/8AhOX/AJj9/za8/v8jtP7/IbL+/wCY/f8AmP3/AHzb/wBx1/8AaNP/AGPO/wBguf8AYLn/AGC5/wBDlP8AXbP/AGjB/wBxzP8Accz/AHHM/wBxzP8Accz/AGfC/wBg0P9wneH/ILft/wCD5f8AVsT/AEue/wBLnv8AQJD/AF2z/wZu6v8Gbur/BTms/wUVgf8FGYX/BGfh/wBq1/8Vvff/UfD//zHt//8AtP//AIPl/wNa0f8GaeT/AECQ/wAMECACNJr/Bgh8/wMR0P8BFfj/AAmg/wCQJP8CXEL/Bgh6/wYIev8GCHz/Bgh6/wYIev8GDHX/Bgx1/wEBCxgArxj/AKUm/wE3x/8BN8f/AJgn/wCfPP8AtHf/AKZi/wBZVP8BMMn/ATDJ/wAfi/8AUF3/AJUz/wCVM/8ALQtQALMj/x7Yhv8Av0j/AL9I/wDLhv8AxoP/JOWs/wDWjf8At27/AJpC/wCaQv8AmkL/AKRd/wCrcf8Aq3H/AJIp/wBNF38AfY//AH2P/wB9j/8Aa4P/AGuD/wB9j/8AfY//AH2P/wBrg/8Aa4P/AGuD/wBrg/8Aa4P/AGuD/wBAG38AT5nfAG/L/wBvy/8Ab8v/AG/L/wBvy/8Ab8v/AG/L/wBvy/8Ab8v/AG/L/wBZsP8AWbD/AFmw/wBZsP8AOH7fAGC3/wCD5P8Al/z/AJf8/wCX/P8Al/z/AJf8/wCX/P8Al/z/AIHh/wB82/8Ae9r/AHLO/wBguf8AYLn/AEOU/wBjuv8Tp/7/Lbz+/wqg/f8KoP3/AJj9/wSb/f84xP//EaX+/wCY/f8AmP3/AHzb/wByz/8AYLn/AGC5/wBDlP8ARoa/AJT4/yu6/v9i2f//Qsz//xeq/v8In/3/AJj9/wCY/f8AmP3/AI/y/wB82/8Acs//AGC5/wBetv8AMGy/AAAAAABGhr8Aedb/CH/W/x+w/v8fsP7/EaX+/wCY/f8Alfn/AInr/wB82/8Abcn/AFOn/wBPo/8AMGy/AAAAAAAAAAAAAAAAABoySAAaMkgAZLz/AG7I/wBuyP8Absj/AF2z/wBRpf8AUaX/AESV/wASKUgAEilIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJERgACREYAAkRGAAGDhgABg4YAAYOGAAAAAAAAAAAAAAAAAAAAAAAAAAAwAMAAIABAAAAAAAAAAAAAAAAAACAAQAAAAEAAAAAAACAAQAAAAAAAAAAAAAAAAAAAAAAAIABAADwDwAA//8AAA==" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     
+    <div class="container">
+        <h1>Sign Up</h1>
+        <!-- Form -->
+        <form id="form">
+            <!-- Full Name -->
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Full Name" required
+                minlength="3" maxlength="100">
+            </div>
+            <!-- Phone Number -->
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="555-555-5555" required
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            </div>
+            <!-- Email Address -->
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="email@address.com" required
+                >
+            </div>
+            <!-- Website URL -->
+            <div class="form-group">
+                <label for="website">Website URL</label>
+                <input type="url" id="website" placeholder="http://maveroff.netlify.app" 
+                required>
+            </div>
+            <!-- Password -->
+            <div class="form-group">
+                <label for="password1">Password</label>
+                <input type="password" id="password1" placeholder="Create Password (Min. 8 Characters)" 
+                required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+                title="Please include at least 1 uppercase character, 1 lowecase character, and 1 number.">
+            </div>
+            <!-- Confirm Password -->
+            <div class="form-group">
+                <label for="password2">Confirm Password</label>
+                <input type="password" id="password2" placeholder="Confirm Password" required
+                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$">
+            </div>
+            <!-- Submit Button -->
+            <button type="submit">Register</button>
+        </form>
+        <!-- Error/Success Message -->
+        <div class="message-container">
+            <h3 id="message">Don't Hesitate!</h3>
+        </div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
